@@ -16,10 +16,22 @@ function Contact() {
             meaningful, user-focused products. Got a project in mind or looking
             for a developer to collaborate with? Let&apos;s connect.
           </p>
-          <p className="mt-12 text-xl text-center sm:text-left">
+          <p className="mt-12 text-xl text-center sm:text-left flex items-center">
             <span className="text-[#9857D3] font-bold">Email:</span>
             <span className="ml-4 text-[#3E4160] dark:text-[#BEC1DD]">
               thtung.dev@gmail.com
+            </span>
+          </p>
+          <p className="mt-6 text-xl text-center sm:text-left flex items-center">
+            <span className="text-[#9857D3] font-bold">LinkedIn:</span>
+            <span className="ml-4 text-[#3E4160] dark:text-[#BEC1DD]">
+              www.linkedin.com/in/tung-thai-dev
+            </span>
+          </p>
+          <p className="mt-6 text-xl text-center sm:text-left flex items-center">
+            <span className="text-[#9857D3] font-bold">Github:</span>
+            <span className="ml-4 text-[#3E4160] dark:text-[#BEC1DD]">
+              https://github.com/PineGithub19
             </span>
           </p>
         </div>

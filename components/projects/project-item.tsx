@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import TechIcon from "./tech-icon";
 import { AppearGradually } from "../animation/appear-gradually";
+import { useTheme } from "../../context/theme-context";
 
 const ProjectItem: React.FC<{
   techs: { name: string; url: string }[];
@@ -13,8 +14,22 @@ const ProjectItem: React.FC<{
   description: string;
   linkRepo: string;
 }> = (props) => {
+  const { theme } = useTheme();
+
   return (
-    <AppearGradually className="flex flex-col justify-center items-center border-1 border-[#23253D] rounded-2xl py-8 px-4 w-[650px] min-h-[650] sm:px-8">
+    <AppearGradually
+      className="flex flex-col justify-center items-center border-1 border-[#23253D] rounded-2xl py-8 px-4 w-[650px] min-h-[650] sm:px-8"
+      whileHover={{
+        scale: 1.05,
+        boxShadow:
+          theme === "dark"
+            ? "0 0 20px #00f0ff, 0 0 40px #00f0ff"
+            : "0 0 20px #9857D3, 0 0 40px #9857D3",
+        borderColor: theme === "dark" ? "#00f0ff" : "#9857D3",
+        transition: { duration: 0.3 },
+      }}
+      transition={{ type: "spring", stiffness: 50 }}
+    >
       <div className="bg-[#FFE6EA] dark:bg-[#11071F] w-full h-[400px] flex justify-center pt-8 overflow-hidden rounded-t-xl">
         <Image
           src={props.image || "/vercel.svg"}

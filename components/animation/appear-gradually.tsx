@@ -1,14 +1,20 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, MotionProps, useInView } from "framer-motion";
 import { useRef } from "react";
 
 import { cardVariants } from "../../constants/constants";
 
-export const AppearGradually: React.FC<{
+type AppearGraduallyProps = {
   className?: string;
   children: React.ReactNode;
-}> = (props) => {
+} & MotionProps;
+
+export const AppearGradually: React.FC<AppearGraduallyProps> = ({
+  className,
+  children,
+  ...motionProps
+}) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
 
@@ -18,9 +24,10 @@ export const AppearGradually: React.FC<{
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       ref={ref}
-      className={props.className}
+      className={className}
+      {...motionProps}
     >
-      {props.children}
+      {children}
     </motion.div>
   );
 };
