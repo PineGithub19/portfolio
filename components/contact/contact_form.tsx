@@ -35,7 +35,7 @@ function ContactForm() {
 
   return (
     <form
-      className="max-w-md mx-auto space-y-6 w-[50%]"
+      className="mx-auto space-y-6 w-[80%] sm:w-[50%]"
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="relative z-0 w-full group">

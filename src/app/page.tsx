@@ -7,9 +7,9 @@ import Education from "../../components/education/education";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Profile />
-      <div className="px-64">
+      <div className="p-4 sm:p-12 md:p-24 2xl:px-64">
         <Education />
         <Projects />
         <WorkExperience />
@@ -21,6 +21,6 @@ export default function Home() {
         </p>
       </div>
       <ThemeButton />
-    </div>
+    </>
   );
 }

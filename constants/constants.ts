@@ -14,6 +14,14 @@ export const cardVariants: Variants = {
 };
 
 export const techs = {
+  html: {
+    name: "html",
+    url: "/images/html.png",
+  },
+  css: {
+    name: "css",
+    url: "/images/css.png",
+  },
   reactjs: {
     name: "reactjs",
     url: "/images/reactjs.png",
@@ -101,5 +109,9 @@ export const techs = {
   figma: {
     name: "figma",
     url: "/images/figma.png",
+  },
+  vercel: {
+    name: "vercel",
+    url: "/images/vercel.png",
   },
 };

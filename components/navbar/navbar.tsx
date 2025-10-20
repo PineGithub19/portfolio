@@ -4,7 +4,13 @@ import { motion } from "framer-motion";
 function Navbar() {
   return (
     <motion.nav
-      className="fixed top-0 z-50 w-full h-20 bg-transparent"
+      className="
+        fixed top-0 right-0 sm:right-auto 
+        w-10 sm:w-full 
+        h-20 
+        z-50 
+        bg-transparent
+      "
       initial={{ opacity: 0, y: -50 }}
       exit={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -12,8 +18,21 @@ function Navbar() {
     >
       <ul
         className="
-          absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] flex gap-12 py-4 px-12 
-          bg-white/80 
+        
+          absolute 
+          
+          top-0 right-0
+          sm:top-1/2 sm:left-1/2 
+          sm:translate-x-[-50%] sm:translate-y-[-50%]
+
+          w-fit
+
+          flex flex-col
+          sm:flex-row gap-12 py-4 px-4 sm:px-12
+          text-center sm:text-left
+          mt-2 mr-2 sm:mt-0 sm:mr-0
+
+          bg-white/80
           dark:bg-transparent
           dark:bg-gradient-to-r from-[#04071d]/80 to-[#0c0e23]/80
           border-1 border-[#6971A2]
@@ -22,22 +41,34 @@ function Navbar() {
         "
       >
         <li>
-          <Link href="#about" className="text-black dark:text-white">
+          <Link
+            href="#about"
+            className="text-nowrap text-black dark:text-white"
+          >
             About
           </Link>
         </li>
         <li>
-          <Link href="#projects" className="text-black dark:text-white">
+          <Link
+            href="#projects"
+            className="text-nowrap text-black dark:text-white"
+          >
             Projects
           </Link>
         </li>
         <li>
-          <Link href="#work-experience" className="text-black dark:text-white">
+          <Link
+            href="#work-experience"
+            className="text-wrap sm:text-nowrap text-black dark:text-white"
+          >
             Work Experience
           </Link>
         </li>
         <li>
-          <Link href="#contact" className="text-black dark:text-white">
+          <Link
+            href="#contact"
+            className="text-nowrap text-black dark:text-white"
+          >
             Contact
           </Link>
         </li>

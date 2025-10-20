@@ -11,7 +11,7 @@ const ProjectSkills: React.FC<{
         <p className="text-center text-3xl text-[#3E4160] dark:text-[#BEC1DD] mb-12">
           {props.title}
         </p>
-        <ul className="flex items-center justify-center gap-12">
+        <ul className="flex flex-wrap items-center justify-center gap-12 w-full">
           {props.skills.map((skill) => (
             <li
               key={skill.name}

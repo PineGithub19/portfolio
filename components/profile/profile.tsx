@@ -13,8 +13,8 @@ function Profile() {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const lastScrollY = useRef<number>(0);
 
-  const yProfile = useTransform(scrollY, [0, 500], [0, -100]);
-  const opcacityProfile = useTransform(scrollY, [0, 500], [1, 0]);
+  const yProfile = useTransform(scrollY, [0, 400], [0, -100]);
+  const opcacityProfile = useTransform(scrollY, [0, 400], [1, 0]);
 
   useEffect(() => {
     const unsubcribe = scrollY.on("change", (currentY) => {
@@ -46,7 +46,13 @@ function Profile() {
         id="about"
         className="relative w-full h-[822px] object-cover overflow-hidden"
       >
-        <Image src="/images/bg-image.png" alt="Background Image" fill />
+        <Image
+          src="/images/bg-image.png"
+          alt="Background Image"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
         <ProfileInfo y={yProfile} opacity={opcacityProfile} />
       </div>
     </>

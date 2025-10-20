@@ -10,12 +10,12 @@ import { AppearGradually } from "../animation/appear-gradually";
 function Education() {
   return (
     <div>
-      <p className="text-6xl text-center text-white font-bold mt-48 mb-24">
+      <p className="text-6xl text-center text-white font-bold mt-36 lg:mt-48 mb-24">
         <span className="text-black dark:text-white">My</span>{" "}
         <span className="text-[#9857D3] dark:text-[#CBACF9]">education</span>
       </p>
-      <AppearGradually className="flex justify-around">
-        <div>
+      <AppearGradually className="flex flex-col lg:flex-row lg:justify-around lg:gap-16">
+        <div className="text-center lg:text-left">
           <div className="relative flex items-center justify-center p-8 rounded-2xl bg-[#EDEADE] overflow-hidden">
             {/* Sheen effect covering full padding area */}
             <motion.div
@@ -64,8 +64,8 @@ function Education() {
             </li>
           </ul>
         </div>
-        <div className="text-2xl text-[#3E4160] dark:text-[#BEC1DD]">
-          <div className="mb-12">
+        <div className="text-2xl text-[#3E4160] dark:text-[#BEC1DD] text-center mt-16 lg:text-left lg:mt-0">
+          <div className="mb-16 lg:mb-12">
             <p className="font-bold mb-4">Relevant Coursework</p>
             <ul className="flex flex-col gap-2 text-lg">
               <li>
@@ -103,7 +103,7 @@ function Education() {
             </ul>
           </div>
         </div>
-        <div className="text-2xl text-[#3E4160] dark:text-[#BEC1DD]">
+        <div className="text-2xl text-[#3E4160] dark:text-[#BEC1DD] text-center mt-16 lg:text-left lg:mt-0">
           <div className="mb-8">
             <p className="font-bold mb-4">Languages</p>
             <ul className="flex flex-col gap-2 text-lg">
