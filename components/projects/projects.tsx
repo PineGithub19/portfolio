@@ -42,7 +42,7 @@ function Projects() {
           image="/images/portfolio.jpg"
           title="My Portfolio (2025)"
           description="A modern, responsive portfolio built with Next.js and React, showcasing my personal information. Integrated with Nodemailer for a fully functional contact form, allowing visitors to reach out directly and Framer Motion to make animations smooth and engaging. The site is deployed on Vercel, ensuring fast performance and seamless deployment."
-          linkRepo=""
+          linkRepo="https://github.com/PineGithub19/portfolio"
         />
         <ProjectItem
           techs={[
