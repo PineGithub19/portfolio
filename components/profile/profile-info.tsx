@@ -22,8 +22,9 @@ const ProfileInfo: React.FC<{
         />
       </div>
       <div className="sm:ml-8 text-white">
-        <h1 className="mt-6 sm:mt-0 text-4xl xl:text-5xl">Thái Huyễn Tùng</h1>
-        <p className="mt-6 text-lg sm:w-64 md:w-100 lg:w-120 xl:w-170 xl:text-xl">
+        <h1 className="sm:mt-0 text-4xl xl:text-5xl">Thái Huyễn Tùng</h1>
+        <p className="my-4 text-2xl font-light">Fullstack Developer</p>
+        <p className="text-lg sm:w-64 md:w-100 lg:w-120 xl:w-170 xl:text-xl font-light">
           Motivated final-year Information Technology student specializing in
           full-stack web development. Experienced in building responsive
           websites using both frontend and backend technologies. Seeking an
