@@ -18,21 +18,33 @@ function Contact() {
           </p>
           <p className="mt-12 text-xl text-center sm:text-left flex items-center">
             <span className="text-[#9857D3] font-bold">Email:</span>
-            <span className="ml-4 text-[#3E4160] dark:text-[#BEC1DD]">
+            <a
+              className="ml-4 text-[#3E4160] dark:text-[#BEC1DD]"
+              target="_blank"
+              href="mailto:thtung.dev@gmail.com"
+            >
               thtung.dev@gmail.com
-            </span>
+            </a>
           </p>
           <p className="mt-6 text-xl text-center sm:text-left flex items-center">
             <span className="text-[#9857D3] font-bold">LinkedIn:</span>
-            <span className="ml-4 text-[#3E4160] dark:text-[#BEC1DD]">
+            <a
+              className="ml-4 text-[#3E4160] dark:text-[#BEC1DD]"
+              target="_blank"
+              href="https://www.linkedin.com/in/tung-thai-dev"
+            >
               www.linkedin.com/in/tung-thai-dev
-            </span>
+            </a>
           </p>
           <p className="mt-6 text-xl text-center sm:text-left flex items-center">
             <span className="text-[#9857D3] font-bold">Github:</span>
-            <span className="ml-4 text-[#3E4160] dark:text-[#BEC1DD]">
+            <a
+              className="ml-4 text-[#3E4160] dark:text-[#BEC1DD]"
+              target="_blank"
+              href="https://github.com/PineGithub19"
+            >
               https://github.com/PineGithub19
-            </span>
+            </a>
           </p>
         </div>
         <ContactForm />
