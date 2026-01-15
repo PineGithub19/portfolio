@@ -114,4 +114,8 @@ export const techs = {
     name: "vercel",
     url: "/images/vercel.png",
   },
+  supabase: {
+    name: "supabase",
+    url: "/images/supabase.png",
+  },
 };

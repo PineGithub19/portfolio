@@ -142,6 +142,7 @@ function Education() {
           skills={[
             techs.mysql,
             techs.postgresql,
+            techs.supabase,
             techs.mongodb,
             techs.firebase,
             techs.prisma,

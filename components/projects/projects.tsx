@@ -17,8 +17,30 @@ function Projects() {
             techs.typescript,
             techs.java,
             techs.springboot,
+            techs.docker,
+          ]}
+          image="/images/online-auction.jpg"
+          title="Online Auction (2026)"
+          description="I worked as a Frontend Engineer on a real-time online auction platform built with React 19, TypeScript, and Vite. The system featured secure JWT-based authentication, protected routing, and reusable form validation using React Hook Form and Zod. I implemented real-time bidding, chat, and notifications using Server-Sent Events, along with scalable state management, caching, and responsive UI design for both customer and admin applications."
+          linkRepo="https://github.com/mareZ-noob/online-auction"
+        />
+        <ProjectItem
+          techs={[techs.reactjs, techs.typescript, techs.nestjs, techs.docker]}
+          image="/images/trello-3d-logo.png"
+          title="MiniTrello (2026)"
+          description="MiniTrello is a full-stack task management platform inspired by Trello, built with React 19, TypeScript, and NestJS. I developed a modern, responsive interface with light and dark themes, secure JWT authentication, and real-time task notifications using Server-Sent Events. The system supports role-based access control, scalable backend services, event-driven architecture with Kafka, caching with Redis, and full containerization using Docker."
+          linkRepo="https://github.com/PineGithub19/Mini_Trello"
+          linkSubRepo="https://github.com/PineGithub19/Mini_Trello_FE"
+        />
+        <ProjectItem
+          techs={[
+            techs.reactjs,
+            techs.typescript,
+            techs.java,
+            techs.springboot,
             techs.python,
             techs.fastapi,
+            techs.docker,
           ]}
           image="/images/binansu.jpg"
           title="Bainansu - Cryptocurrency Trading Support Platform (2025)"

@@ -13,6 +13,7 @@ const ProjectItem: React.FC<{
   title: string;
   description: string;
   linkRepo: string;
+  linkSubRepo?: string;
 }> = (props) => {
   const { theme } = useTheme();
 
@@ -54,13 +55,24 @@ const ProjectItem: React.FC<{
           ))}
         </div>
 
-        <Link
-          target="_blank"
-          href={props.linkRepo}
-          className="text-xl text-[#9857D3] dark:text-[#CBACF9]"
-        >
-          Check Github
-        </Link>
+        <div className="flex flex-col gap-2 items-end">
+          <Link
+            target="_blank"
+            href={props.linkRepo}
+            className="text-xl text-[#9857D3] dark:text-[#CBACF9]"
+          >
+            Check Github
+          </Link>
+          {props.linkSubRepo && (
+            <Link
+              target="_blank"
+              href={props.linkSubRepo}
+              className="text-xl text-[#9857D3] dark:text-[#CBACF9]"
+            >
+              Check Second Github
+            </Link>
+          )}
+        </div>
       </div>
     </AppearGradually>
   );
